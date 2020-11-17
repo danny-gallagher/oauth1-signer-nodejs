@@ -38,7 +38,7 @@ jobs:
           -Dsonar.projectKey=Mastercard_oauth1-signer-nodejs
           -Dsonar.sources=./src
           -Dsonar.tests=./test
-          -Dsonar.testExecutionReportPaths=test-results.xml
+          -Dsonar.coverage.jacoco.xmlReportPaths=test-results.xml
           -Dsonar.javascript.lcov.reportPaths=.nyc_output/coverage.lcov
           -Dsonar.host.url=https://sonarcloud.io 
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
